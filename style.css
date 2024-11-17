@@ -70,7 +70,6 @@ header::before {
     background-size: cover; /* Skaliert das Bild proportional, ohne Kacheln */
     background-position: center; /* Positioniert das Bild zentriert */
     background-image: url('film1.jpg');
-    background-repeat: no-repeat; /* Verhindert Kacheln */
     animation: slideshow 30s infinite;
 	opacity: 0.8;
     z-index: 0; /* Bilder hinter dem Text */
@@ -82,25 +81,21 @@ header::before {
         background-image: url('slide1.jpg');
 	background-size: cover; /* Skalierung bleibt gleich */
         background-position: center; /* Zentriert das Bild */
-	background-repeat: no-repeat; /* Verhindert Kacheln */
     }
     33% {
         background-image: url('slide2.jpg');
 	background-size: cover; /* Skalierung bleibt gleich */
         background-position: center; /* Zentriert das Bild */
-	background-repeat: no-repeat; /* Verhindert Kacheln */
     }
     66% {
         background-image: url('slide3.jpg');
 	background-size: cover; /* Skalierung bleibt gleich */
         background-position: center; /* Zentriert das Bild */
-	background-repeat: no-repeat; /* Verhindert Kacheln */
     }
     100% {
         background-image: url('slide4.jpg');
 	background-size: cover; /* Skalierung bleibt gleich */
         background-position: center; /* Zentriert das Bild */
-	background-repeat: no-repeat; /* Verhindert Kacheln */
     }
 }
 
