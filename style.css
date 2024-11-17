@@ -89,12 +89,12 @@ header::before {
 }
 
 header h1 {
-    font-size: 8rem;
+    font-size: 6rem;
     margin: 0;
 }
 
 header p {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 10px 0;
 }
 
