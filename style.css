@@ -1,0 +1,160 @@
+/* Allgemein */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #121212;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Größerer Abstand zwischen den Optionen */
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem; /* Größere Schriftgröße */
+    font-weight: bold;
+    padding: 10px 20px; /* Blockigere Darstellung */
+    background-color: #292929; /* Hintergrundfarbe für den Block */
+    border-radius: 5px; /* Runde Ecken */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #808080; /* Highlight-Farbe beim Hover */
+    color: #000; /* Textfarbe beim Hover */
+}
+
+/* Header */
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px; /* Platz für die größere Navbar */
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+/* Projekte */
+.projects {
+    padding: 50px;
+    background-color: #1e1e1e;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #292929;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: 20rem;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+			transition: transform 0.5s;
+}
+		
+		.project-card img:hover{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+			transform: scale(1.08);
+}
+
+.project-card h3 {
+    margin: 10px 0;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+/* Über uns */
+.about {
+    padding: 50px;
+    background-color: #292929;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    font-size: 0.9rem;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .navbar ul {
+justify-content: space-between; /* Mehr Platz zwischen den Links */
+gap: 8px; /* Weniger Abstand zwischen den Optionen */
+    }
+
+    .navbar ul li a {
+font-size: 1rem; /* Kleinere Schriftgröße */
+padding: 8px 12px; /* Weniger Padding */
+    }
+
+    header h1 {
+font-size: 2.5rem; /* Kleinere Schriftgröße für Header */
+    }
+
+    header p {
+font-size: 1.2rem; /* Kleinere Schriftgröße für Untertitel */
+    }
+
+    .project-card {
+width: 250px; /* Kleinere Karten für mobile Ansicht */
+    }
+}
