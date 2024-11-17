@@ -67,7 +67,7 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-background: url('film1.jpg') no-repeat center center/cover
+    background: url('film1.jpg') no-repeat center center/cover;
     animation: slideshow 30s infinite;
 	opacity: 0.8;
     z-index: 0; /* Bilder hinter dem Text */
@@ -85,18 +85,17 @@ background: url('film1.jpg') no-repeat center center/cover
         background-image: url('slide3.jpg');
     }
     100% {
-
         background-image: url('slide4.jpg');
     }
 }
 
 header h1 {
-    font-size: 6rem;
+    font-size: 3rem;
     margin: 0;
 }
 
 header p {
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin: 10px 0;
 }
 
@@ -185,7 +184,7 @@ padding: 8px 12px; /* Weniger Padding */
     }
 
     header h1 {
-font-size: 3rem; /* Kleinere Schriftgröße für Header */
+font-size: 2.5rem; /* Kleinere Schriftgröße für Header */
     }
 
     header p {
@@ -305,4 +304,3 @@ width: 250px; /* Kleinere Karten für mobile Ansicht */
 /* Stil für den Hover-Effekt des Absende-Buttons */
 .submit-button:hover {
     background-color: #b3b3b3;
-}
