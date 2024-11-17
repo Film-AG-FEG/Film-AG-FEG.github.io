@@ -68,7 +68,6 @@ header::before {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat; /* Verhindert Kacheln */
-    background-image: url('film1.jpg');
     animation: slideshow 30s infinite;
 	opacity: 0.8;
     z-index: 0; /* Bilder hinter dem Text */
@@ -77,20 +76,23 @@ header::before {
 /* Slideshow-Animation */
 @keyframes slideshow {
     0% {
+	height: 100vh; /* 50% der Bildschirmhöhe */
         background-image: url('slide1.jpg');
 	background-repeat: no-repeat; /* Verhindert Kacheln */
-	background-width: 100%;
-	background-height: 100%;
     }
     33% {
+	height: 100vh; /* 50% der Bildschirmhöhe */
         background-image: url('slide2.jpg');
 	background-repeat: no-repeat; /* Verhindert Kacheln */
     }
     66% {
+	height: 100vh; /* 50% der Bildschirmhöhe */
         background-image: url('slide3.jpg');
 	background-repeat: no-repeat; /* Verhindert Kacheln */
     }
     100% {
+
+        height: 100vh; /* 50% der Bildschirmhöhe */
         background-image: url('slide4.jpg');
 	background-repeat: no-repeat; /* Verhindert Kacheln */
     }
