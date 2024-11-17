@@ -79,6 +79,8 @@ header::before {
     0% {
         background-image: url('slide1.jpg');
 	background-repeat: no-repeat; /* Verhindert Kacheln */
+	background-width: 100%;
+	background-height: 100%;
     }
     33% {
         background-image: url('slide2.jpg');
