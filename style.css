@@ -79,15 +79,23 @@ header::before {
 @keyframes slideshow {
     0% {
         background-image: url('slide1.jpg');
+	background-size: cover; /* Skalierung bleibt gleich */
+        background-position: center; /* Zentriert das Bild */
     }
     33% {
         background-image: url('slide2.jpg');
+	background-size: cover; /* Skalierung bleibt gleich */
+        background-position: center; /* Zentriert das Bild */
     }
     66% {
         background-image: url('slide3.jpg');
+	background-size: cover; /* Skalierung bleibt gleich */
+        background-position: center; /* Zentriert das Bild */
     }
     100% {
         background-image: url('slide4.jpg');
+	background-size: cover; /* Skalierung bleibt gleich */
+        background-position: center; /* Zentriert das Bild */
     }
 }
 
