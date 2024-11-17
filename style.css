@@ -75,22 +75,13 @@ background: url('film1.jpg') no-repeat center center/cover
 
 /* Slideshow-Animation */
 @keyframes slideshow {
-    0%, 25% {
-        background-image: url('slide1.jpg');
-        opacity: 1;
-    }
-    33%, 58% {
-        background-image: url('slide2.jpg');
-        opacity: 1;
-    }
-    66%, 91% {
-        background-image: url('slide3.jpg');
-        opacity: 1;
-    }
-    100% {
-        background-image: url('slide4.jpg');
-        opacity: 1;
-    }
+    0% { background-image: url('slide1.jpg'); opacity: 1; }
+    25% { opacity: 0; }
+    33% { background-image: url('slide2.jpg'); opacity: 1; }
+    58% { opacity: 0; }
+    66% { background-image: url('slide3.jpg'); opacity: 1; }
+    91% { opacity: 0; }
+    100% { background-image: url('slide4.jpg'); opacity: 1; }
 }
 
 header h1 {
