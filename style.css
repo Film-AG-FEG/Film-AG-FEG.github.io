@@ -46,73 +46,38 @@ body {
     color: #000; /* Textfarbe beim Hover */
 }
 
-header {
+/* Header Container */
+#header {
     position: relative;
-    height: 100vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 80px;
-    overflow: hidden; /* Verhindert, dass Bilder außerhalb des Header-Bereichs sichtbar sind */
+    height: 300px; /* Feste Höhe, kann angepasst werden */
 }
-	
+
 /* Slideshow Container */
 .slideshow {
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    height: 100; /* Passe die Höhe an */
-}
-
-/* Slides */
-.slide {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
-    opacity: 0;
-    animation: slideAnimation 15s infinite;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Individuelle Animation für jede Slide */
-.slide:nth-child(1) {
-    animation-delay: 0s;
-}
-.slide:nth-child(2) {
-    animation-delay: 5s;
-}
-.slide:nth-child(3) {
-    animation-delay: 10s;
+    height: 100%; /* Passt die Höhe an den Header an */
+    background-size: cover;
+    background-position: center;
+    animation: slideAnimation 12s infinite;
+    z-index: -1; /* Schiebt die Slideshow hinter den Text */
 }
 
 /* Animation */
 @keyframes slideAnimation {
-    0% {
-        opacity: 0;
+    0%, 33% {
+        background-image: url('slide1.jpg'); /* Ersetze mit deinem Bild */
     }
-    20% {
-        opacity: 1;
+    34%, 66% {
+        background-image: url('slide2.jpg'); /* Ersetze mit deinem Bild */
     }
-    40% {
-        opacity: 1;
-    }
-    60% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
+    67%, 100% {
+        background-image: url('slide3.jpg'); /* Ersetze mit deinem Bild */
     }
 }
-
 
 header h1 {
     font-size: 3rem;
