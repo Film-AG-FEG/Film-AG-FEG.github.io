@@ -50,7 +50,7 @@ body {
 #header {
     position: relative;
     width: 100%;
-    height: 300px; /* Feste Höhe für den Header, kann angepasst werden */
+    height: 60vh; /* Feste Höhe für den Header, kann angepasst werden */
 }
 
 /* Slideshow Container */
@@ -92,9 +92,13 @@ body {
 /* Zusätzliche Optionen für Mobilgeräte */
 @media (max-width: 768px) {
     #header {
-        height: 200px; /* Reduzierte Höhe für kleinere Bildschirme */
+        height: 80vh; /* Reduzierte Höhe für kleinere Bildschirme */
     }
     .hero {
+	    position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
         padding: 30px 10px;
     }
 }
