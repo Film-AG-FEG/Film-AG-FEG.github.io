@@ -49,6 +49,7 @@ body {
 /* Header Container */
 #header {
     position: relative;
+    display: flex;
     justify-content: center; /* Horizontal zentrieren */
     align-items: center;     /* Vertikal zentrieren */
     width: 100%;
@@ -98,6 +99,7 @@ body {
 @media (max-width: 768px) {
     #header {
         height: 80vh; /* Reduzierte Höhe für kleinere Bildschirme */
+	display: flex;
 	justify-content: center; /* Horizontal zentrieren */
         align-items: center;     /* Vertikal zentrieren */
     }
