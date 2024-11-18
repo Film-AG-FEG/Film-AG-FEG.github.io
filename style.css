@@ -46,6 +46,18 @@ body {
     color: #000; /* Textfarbe beim Hover */
 }
 
+header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    overflow: hidden; /* Verhindert, dass Bilder außerhalb des Header-Bereichs sichtbar sind */
+}
+	
 .slideshow {
     width: 100%;
     height: 400px;
