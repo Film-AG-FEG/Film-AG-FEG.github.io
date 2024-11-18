@@ -76,7 +76,7 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
-    animation: fade 25s infinite; /* Smooth Übergang */
+    animation: fade 30s infinite; /* Smooth Übergang */
     z-index: -1; /* Schiebt die Slideshow hinter den Text */
 }
 
@@ -84,83 +84,83 @@ body {
 @keyframes fade {
     0% {
         background-image: url('slide1.jpg');
-        opacity: 0.2;
+        opacity: 0.1;
     }
-    1% {
+    2% {
         background-image: url('slide1.jpg');
         opacity: 1;
     }
-    19% {
+    18% {
         background-image: url('slide1.jpg');
         opacity: 1;
     }
     20% {
         background-image: url('slide1.jpg');
-        opacity: 0.2;
+        opacity: 0.1;
     }
     20% {
         background-image: url('slide2.jpg');
-        opacity: 0.2;
+        opacity: 0.1;
     }
-    21% {
+    22% {
         background-image: url('slide2.jpg');
         opacity: 1;
     }
-    39% {
+    38% {
         background-image: url('slide2.jpg');
         opacity: 1;
     }
     40% {
         background-image: url('slide2.jpg');
-        opacity: 0.2;
+        opacity: 0.1;
     }
     40% {
         background-image: url('slide3.jpg');
-        opacity: 0.2;
+        opacity: 0.1;
     }
-    41% {
+    42% {
         background-image: url('slide3.jpg');
         opacity: 1;
     }
-    59% {
+    58% {
         background-image: url('slide3.jpg');
         opacity: 1;
     }
     60% {
         background-image: url('slide3.jpg');
-        opacity: 0.2;
+        opacity: 0.1;
     }
     60% {
         background-image: url('slide4.jpg');
-        opacity: 0.2;
+        opacity: 0.1;
     }
-    61% {
+    62% {
         background-image: url('slide4.jpg');
         opacity: 1;
     }
-    79% {
+    78% {
         background-image: url('slide4.jpg');
         opacity: 1;
     }
     80% {
         background-image: url('slide4.jpg');
-        opacity: 0.2;
+        opacity: 0.1;
     }
     80% {
         background-image: url('film2.jpg');
-        opacity: 0.2;
+        opacity: 0.1;
     }
-    81% {
+    82% {
         background-image: url('film2.jpg');
         opacity: 1;
     }
-    99% {
+    98% {
         background-image: url('film2.jpg');
         opacity: 1;
     }
     100% {
         background-image: url('film2.jpg');
-        opacity: 0.2;
+        opacity: 0.1;
     }
 }
 
