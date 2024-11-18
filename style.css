@@ -69,12 +69,15 @@ body {
 /* Animation für die Slideshow */
 @keyframes slideAnimation {
     0%, 33% {
+	opacity: 1;
         background-image: url('slide1.jpg'); /* Ersetze mit deinem Bild */
     }
     34%, 66% {
+	opacity: 0;
         background-image: url('slide2.jpg'); /* Ersetze mit deinem Bild */
     }
     67%, 100% {
+	opacity: 1;
         background-image: url('slide3.jpg'); /* Ersetze mit deinem Bild */
     }
 }
