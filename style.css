@@ -73,15 +73,27 @@ body {
 @keyframes slideAnimation {
     0%, 33% {
 	opacity: 1;
-        background-image: url('slide1.jpg'); /* Ersetze mit deinem Bild */
+        background-image: url('slide1.jpg');
+    }
+    34% {
+	opacity: 0.5;
+	background-image: url('slide1.jpg');
     }
     34%, 66% {
 	opacity: 0;
-        background-image: url('slide2.jpg'); /* Ersetze mit deinem Bild */
+        background-image: url('slide2.jpg');
+    }
+    34% {
+	opacity: 0.5;
+	background-image: url('slide2.jpg');
     }
     67%, 100% {
 	opacity: 1;
-        background-image: url('slide3.jpg'); /* Ersetze mit deinem Bild */
+        background-image: url('slide3.jpg');
+    }
+    34% {
+	opacity: 0.5;
+	background-image: url('slide3.jpg');
     }
 }
 
