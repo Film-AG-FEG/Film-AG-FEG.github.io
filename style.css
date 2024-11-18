@@ -107,11 +107,11 @@ body {
         opacity: 1;
     }
     39% {
-        background-image: url('slide1.jpg');
+        background-image: url('slide2.jpg');
         opacity: 1;
     }
     40% {
-        background-image: url('slide1.jpg');
+        background-image: url('slide2.jpg');
         opacity: 0.2;
     }
     40% {
