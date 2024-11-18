@@ -84,7 +84,7 @@ body {
 @keyframes fade {
     0% {
         background-image: url('slide1.jpg');
-        opacity: 0.1;
+        opacity: 0.2;
     }
     2% {
         background-image: url('slide1.jpg');
@@ -96,11 +96,11 @@ body {
     }
     20% {
         background-image: url('slide1.jpg');
-        opacity: 0.1;
+        opacity: 0.2;
     }
     20% {
         background-image: url('slide2.jpg');
-        opacity: 0.1;
+        opacity: 0.2;
     }
     22% {
         background-image: url('slide2.jpg');
@@ -112,11 +112,11 @@ body {
     }
     40% {
         background-image: url('slide2.jpg');
-        opacity: 0.1;
+        opacity: 0.2;
     }
     40% {
         background-image: url('slide3.jpg');
-        opacity: 0.1;
+        opacity: 0.2;
     }
     42% {
         background-image: url('slide3.jpg');
@@ -128,11 +128,11 @@ body {
     }
     60% {
         background-image: url('slide3.jpg');
-        opacity: 0.1;
+        opacity: 0.2;
     }
     60% {
         background-image: url('slide4.jpg');
-        opacity: 0.1;
+        opacity: 0.2;
     }
     62% {
         background-image: url('slide4.jpg');
@@ -144,11 +144,11 @@ body {
     }
     80% {
         background-image: url('slide4.jpg');
-        opacity: 0.1;
+        opacity: 0.2;
     }
     80% {
         background-image: url('film2.jpg');
-        opacity: 0.1;
+        opacity: 0.2;
     }
     82% {
         background-image: url('film2.jpg');
@@ -160,7 +160,7 @@ body {
     }
     100% {
         background-image: url('film2.jpg');
-        opacity: 0.1;
+        opacity: 0.2;
     }
 }
 
@@ -258,7 +258,7 @@ header p {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #1e1e1e;
+    background-color: #808080;
     font-size: 0.9rem;
 }
 
