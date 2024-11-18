@@ -64,7 +64,7 @@ header {
     max-width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    height: 300px; /* Passe die Höhe an */
+    height: 100; /* Passe die Höhe an */
 }
 
 /* Slides */
