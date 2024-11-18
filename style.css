@@ -49,6 +49,7 @@ body {
 header {
     position: relative;
     height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +60,7 @@ header {
 }
 	
 /* Slideshow Container */
-.slideshow-container {
+.slideshow {
     position: relative;
     max-width: 100%;
     margin: 0 auto;
