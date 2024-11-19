@@ -64,6 +64,7 @@ body {
         z-index: 1;
         text-align: center;
         color: white;
+	margin: 50px;
         padding: 30px 10px;
 	background: rgba(0, 0, 0, 0.5);
     }
