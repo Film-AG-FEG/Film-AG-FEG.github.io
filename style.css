@@ -64,8 +64,7 @@ body {
         z-index: 1;
         text-align: center;
         color: white;
-	margin: 50px;
-        padding: 30px 10px;
+        padding: 30px 30px;
 	background: rgba(0, 0, 0, 0.5);
     }
 
@@ -181,7 +180,7 @@ body {
             z-index: 1;
             text-align: center;
             color: white;
-            padding: 30px 10px;
+            padding: 30px 30px;
 	    background: rgba(0, 0, 0, 0.5);
     }
 }
