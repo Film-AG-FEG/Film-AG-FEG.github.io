@@ -14,7 +14,13 @@ body {
     background-color: #1e1e1e;
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
+    z-index: 100;
+	transition: top 0.3s; /* Sanfter Übergang beim Scrollen */
+}
+
+.navbar.fixed {
+    position: fixed; /* Wechselt zu fixed, wenn gescrollt wird */
+    top: 0; /* Positioniert die Navbar am oberen Rand des Bildschirms */
 }
 
 .navbar ul {
@@ -23,7 +29,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px; /* Größerer Abstand zwischen den Optionen */
+    gap: 2rem; /* Größerer Abstand zwischen den Optionen */
 }
 
 .navbar ul li {
@@ -48,7 +54,8 @@ body {
 
 /* Header Container */
 #header {
-    position: relative;
+	margin-top: 50px; /* Abstand, um Platz für die Navbar zu schaffen */
+    position: relative; /* Damit der Header relativ zur Navbar positioniert ist */
     display: flex;
     justify-content: center; /* Horizontal zentrieren */
     align-items: center;     /* Vertikal zentrieren */
@@ -84,83 +91,83 @@ body {
 @keyframes fade {
     0% {
         background-image: url('slide1.jpg');
-        opacity: 0.3;
+        opacity: 0;
     }
     3% {
         background-image: url('slide1.jpg');
         opacity: 1;
     }
-    17% {
+    18% {
         background-image: url('slide1.jpg');
         opacity: 1;
     }
     20% {
         background-image: url('slide1.jpg');
-        opacity: 0.3;
+        opacity: 0;
     }
-    20% {
+    20.01% {
         background-image: url('slide2.jpg');
-        opacity: 0.3;
+        opacity: 0;
     }
     23% {
         background-image: url('slide2.jpg');
         opacity: 1;
     }
-    37% {
+    38% {
         background-image: url('slide2.jpg');
         opacity: 1;
     }
     40% {
         background-image: url('slide2.jpg');
-        opacity: 0.3;
+        opacity: 0;
     }
-    40% {
+    40.01% {
         background-image: url('slide3.jpg');
-        opacity: 0.3;
+        opacity: 0;
     }
     43% {
         background-image: url('slide3.jpg');
         opacity: 1;
     }
-    57% {
+    58% {
         background-image: url('slide3.jpg');
         opacity: 1;
     }
     60% {
         background-image: url('slide3.jpg');
-        opacity: 0.3;
+        opacity: 0;
     }
-    60% {
+    60.01% {
         background-image: url('slide4.jpg');
-        opacity: 0.3;
+        opacity: 0;
     }
     63% {
         background-image: url('slide4.jpg');
         opacity: 1;
     }
-    77% {
+    78% {
         background-image: url('slide4.jpg');
         opacity: 1;
     }
     80% {
         background-image: url('slide4.jpg');
-        opacity: 0.3;
+        opacity: 0;
     }
-    80% {
+    80.01% {
         background-image: url('film2.jpg');
-        opacity: 0.3;
+        opacity: 0;
     }
     83% {
         background-image: url('film2.jpg');
         opacity: 1;
     }
-    97% {
+    98% {
         background-image: url('film2.jpg');
         opacity: 1;
     }
     100% {
         background-image: url('film2.jpg');
-        opacity: 0.3;
+        opacity: 0;
     }
 }
 
@@ -169,19 +176,19 @@ body {
 /* Zusätzliche Optionen für Mobilgeräte */
 @media (max-width: 768px) {
     #header {
-        height: 80vh; /* Reduzierte Höhe für kleinere Bildschirme */
+    height: 80vh; /* Reduzierte Höhe für kleinere Bildschirme */
 	display: flex;
 	justify-content: center; /* Horizontal zentrieren */
-        align-items: center;     /* Vertikal zentrieren */
+    align-items: center;     /* Vertikal zentrieren */
     }
     .hero {
 	    position: relative;
 	    justify-content: center; /* Horizontal zentrieren */
-            align-items: center;     /* Vertikal zentrieren */
-            z-index: 1;
-            text-align: center;
-            color: white;
-            padding: 5% 5%;
+        align-items: center;     /* Vertikal zentrieren */
+        z-index: 1;
+        text-align: center;
+        color: white;
+        padding: 5% 5%;
 	    background: rgba(0, 0, 0, 0.5);
     }
 }
@@ -228,7 +235,7 @@ header p {
 			transition: transform 0.5s;
 }
 		
-		.project-card img:hover{
+.project-card img:hover{
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -264,29 +271,41 @@ footer {
 }
 
 /* Responsive Anpassungen */
-@media (max-width: 768px) {
+@media (max-width: 570px) {
     .navbar ul {
-justify-content: space-between; /* Mehr Platz zwischen den Links */
-gap: 8px; /* Weniger Abstand zwischen den Optionen */
+		flex-wrap: wrap; /* Erlaubt Umbrüche in der Flexbox */
+        justify-content: center;
+		gap: 1rem;
     }
 
+	.navbar ul li {
+		margin: 5px 0;
+	}
+
     .navbar ul li a {
-font-size: 1rem; /* Kleinere Schriftgröße */
-padding: 8px 12px; /* Weniger Padding */
+		font-size: 1rem; /* Kleinere Schriftgröße */
+		flex: 1 1 45%; /* Jedes Listenelement nimmt 45% der Breite ein */
     }
 
     header h1 {
-font-size: 2.5rem; /* Kleinere Schriftgröße für Header */
+		font-size: 2.5rem; /* Kleinere Schriftgröße für Header */
     }
 
     header p {
-font-size: 1.2rem; /* Kleinere Schriftgröße für Untertitel */
+		font-size: 1.2rem; /* Kleinere Schriftgröße für Untertitel */
     }
 
     .project-card {
-width: 250px; /* Kleinere Karten für mobile Ansicht */
+		width: 250px; /* Kleinere Karten für mobile Ansicht */
     }
 }
+
+@media (max-width: 8px) {
+    .navbar ul {
+		flex-direction: column; /* Mehr Platz zwischen den Links */
+		align-items: center;
+		/*gap: 8px; /* Weniger Abstand zwischen den Optionen (nur bei justify-content: space-between;)*/
+    }
 
 /* KONTAKTFORMULAR */
 .contact {
