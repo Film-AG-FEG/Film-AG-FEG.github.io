@@ -273,9 +273,9 @@ footer {
 /* Responsive Anpassungen */
 @media (max-width: 570px) {
     .navbar ul {
-		flex-wrap: wrap; /* Erlaubt Umbrüche in der Flexbox */
+	flex-wrap: wrap; /* Erlaubt Umbrüche in der Flexbox */
         justify-content: center;
-		gap: 0.5rem;
+	gap: 0.5rem;
     }
 
     .navbar ul li {
