@@ -275,7 +275,7 @@ footer {
     .navbar ul {
 		flex-wrap: wrap; /* Erlaubt Umbrüche in der Flexbox */
         justify-content: center;
-		gap: 1rem;
+		gap: 0.5rem;
     }
 
     .navbar ul li {
@@ -284,7 +284,7 @@ footer {
     .navbar ul li a {
         text-decoration: none;
         color: #fff;
-        font-size: 1rem; /* Größere Schriftgröße */       font-weight: bold;
+        font-size: 00.8rem; /* Größere Schriftgröße */       font-weight: bold;
         padding: 8px 18px; /* Blockigere Darstellung */
         background-color: #292929; /* Hintergrundfarbe für den Block */
         border-radius: 5px; /* Runde Ecken */
