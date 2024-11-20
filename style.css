@@ -15,7 +15,7 @@ body {
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     z-index: 100;
-	transition: top 0.3s; /* Sanfter Übergang beim Scrollen */
+    transition: top 0.3s; /* Sanfter Übergang beim Scrollen */
 }
 
 .navbar.fixed {
@@ -29,7 +29,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 2rem; /* Größerer Abstand zwischen den Optionen */
+    gap: 2rem; /* Abstand zwischen den Optionen */
 }
 
 .navbar ul li {
@@ -278,13 +278,17 @@ footer {
 		gap: 1rem;
     }
 
-	.navbar ul li {
+    .navbar ul li {
 		margin: 5px 0;
 	}
-
     .navbar ul li a {
-		font-size: 1rem; /* Kleinere Schriftgröße */
-		flex: 1 1 45%; /* Jedes Listenelement nimmt 45% der Breite ein */
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem; /* Größere Schriftgröße */       font-weight: bold;
+        padding: 8px 18px; /* Blockigere Darstellung */
+        background-color: #292929; /* Hintergrundfarbe für den Block */
+        border-radius: 5px; /* Runde Ecken */
+        transition: background-color 0.3s, color 0.3s;
     }
 
     header h1 {
@@ -306,6 +310,12 @@ footer {
 		align-items: center;
 		/*gap: 8px; /* Weniger Abstand zwischen den Optionen (nur bei justify-content: space-between;)*/
     }
+
+    .navbar ul li a {
+		font-size: 1rem; /* Kleinere Schriftgröße */
+		flex: 1 1 45%; /* Jedes Listenelement nimmt 45% der Breite ein */
+    }
+}
 
 /* KONTAKTFORMULAR */
 .contact {
